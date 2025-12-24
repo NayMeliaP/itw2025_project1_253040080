@@ -935,6 +935,10 @@ section .wave.wave4 {
     text-align: center;
   }
 
+  .teksn {
+    margin-left: -5px;
+  }
+
   .bawa {
     padding: 15px;
     max-width: 280px;
