@@ -896,6 +896,10 @@ section .wave.wave4 {
     width: 80%;
   }
 
+  .bawa {
+    max-height: 700px;
+  }
+
   .lain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
