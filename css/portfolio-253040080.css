@@ -583,7 +583,7 @@ iframe {
 }
 
 .bobon img:hover {
-  animation: loncat 0.6s ease infinite;
+  animation: loncat 0.8s ease infinite;
 }
 
 .aboutdl[data-target="bobon"] .ha img {
@@ -592,7 +592,7 @@ iframe {
 }
 
 .aboutdl[data-target="bobon"] .ha img:hover {
-  animation: loncat 0.6s ease infinite;
+  animation: loncat 0.8s ease infinite;
 }
 
 .aboutdl[data-target="bobon"] .bawa {
@@ -603,6 +603,10 @@ iframe {
 
 .aboutdl[data-target="bobon"] .kitty img {
   animation: wiggle 1.5s infinite ease-in-out;
+}
+
+.aboutdl[data-target="bobon"] .kitty img:hover {
+  animation: loncat 0.6s ease infinite;
 }
 
 section .wavet {
@@ -906,17 +910,16 @@ section .wave.wave4 {
   .contain h1 {
     font-size: 42px;
     line-height: 1.2;
-    margin: 0px;
   }
 
   .contain h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .lain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 14px;
     margin-top: 20px;
     justify-items: center;
   }
@@ -933,8 +936,8 @@ section .wave.wave4 {
 
   .bawa {
     padding: 15px;
-    height: auto;
-    max-height: calc(100vh - 100px);
+    max-width: 280px;
+    max-height: 450px;
     margin: auto;
   }
 
@@ -953,11 +956,12 @@ section .wave.wave4 {
 
   .fotoilus {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
+    gap: 40px;
   }
 
   .fotoilus img {
-    height: 160px;
+    height: 140px;
+    width: 100px;
     border-radius: 8px;
   }
 
@@ -965,7 +969,12 @@ section .wave.wave4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
+  }
+
+  .gameimg img {
+    width: 150px;
+    height: auto;
   }
 
   .gameisi {
@@ -994,7 +1003,7 @@ section .wave.wave4 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 2px;
   }
 
   .linkisi a {
@@ -1023,65 +1032,15 @@ section .wave.wave4 {
   .form textarea {
     font-size: 14px;
   }
-}
 
-@media (max-width: 350px) {
-  .conti,
-  .contain {
-    width: 90%; /* lebih kecil supaya ada margin di kiri-kanan */
-    border-radius: 12px;
-    margin: auto;
+  .alert {
+    font-size: 13px;
+    padding: 10px 15px;
   }
 
-  .contain {
-    padding: 0;
-    height: auto;
-  }
-
-  .contain h1 {
-    font-size: 32px;
-    line-height: 1.2;
-    margin: 0;
-    padding-top: 20px;
-  }
-
-  .contain h3 {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-
-  .lain {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-top: 15px;
-    justify-items: center;
-  }
-
-  .lain img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .lain h5 {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .bawa {
-    padding: 10px;
-    max-width: 280px;
-    max-height: 450px;
-    overflow-y: auto;
-    margin: auto;
-  }
-
-  .aku img {
-    width: 100px;
-  }
-
-  .aku h3 {
-    font-size: 24px;
+  .infonya {
+    font-size: 14px;
+    padding: 12px 18px;
   }
 
   .pill {
@@ -1089,71 +1048,17 @@ section .wave.wave4 {
     padding: 6px 8px;
   }
 
-  .fotoilus {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-
-  .fotoilus img {
-    height: 140px;
-    border-radius: 6px;
-  }
-
-  .game {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .gameisi {
-    max-width: 95%;
-    text-align: justify;
-  }
-
-  .other h2 {
-    font-size: 20px;
-  }
-
-  .other p,
-  .other ul {
+  .bawahh,
+  .bawahh a {
     font-size: 13px;
   }
 
-  .gameimg {
-    margin-left: 10px;
+  .nanya {
+    font-size: 14px;
   }
 
-  .linkisi {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .linkisi a {
-    padding: 10px;
-  }
-
-  .linkisi img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .linkisi h5 {
+  .jawab p {
     font-size: 13px;
-  }
-
-  .contactisi h6 {
-    font-size: 24px;
-  }
-
-  .contactisi p {
-    font-size: 12px;
-  }
-
-  .form input,
-  .form textarea {
-    font-size: 12px;
   }
 }
 
