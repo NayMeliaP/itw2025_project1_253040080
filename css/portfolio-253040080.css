@@ -893,7 +893,7 @@ section .wave.wave4 {
 @media (max-width: 480px) {
   .conti,
   .contain {
-    width: 80%; 
+    width: 95%;
     border-radius: 16px;
     margin: auto;
   }
@@ -913,7 +913,7 @@ section .wave.wave4 {
     font-size: 18px;
   }
 
-   .lain {
+  .lain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -1022,6 +1022,138 @@ section .wave.wave4 {
   .form input,
   .form textarea {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .conti,
+  .contain {
+    width: 90%; /* lebih kecil supaya ada margin di kiri-kanan */
+    border-radius: 12px;
+    margin: auto;
+  }
+
+  .contain {
+    padding: 0;
+    height: auto;
+  }
+
+  .contain h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .contain h3 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .lain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+    justify-items: center;
+  }
+
+  .lain img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .lain h5 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .bawa {
+    padding: 10px;
+    max-width: 280px;
+    max-height: 450px;
+    overflow-y: auto;
+    margin: auto;
+  }
+
+  .aku img {
+    width: 100px;
+  }
+
+  .aku h3 {
+    font-size: 24px;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .fotoilus {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .fotoilus img {
+    height: 140px;
+    border-radius: 6px;
+  }
+
+  .game {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .gameisi {
+    max-width: 95%;
+    text-align: justify;
+  }
+
+  .other h2 {
+    font-size: 20px;
+  }
+
+  .other p,
+  .other ul {
+    font-size: 13px;
+  }
+
+  .gameimg {
+    margin-left: 10px;
+  }
+
+  .linkisi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .linkisi a {
+    padding: 10px;
+  }
+
+  .linkisi img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .linkisi h5 {
+    font-size: 13px;
+  }
+
+  .contactisi h6 {
+    font-size: 24px;
+  }
+
+  .contactisi p {
+    font-size: 12px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 12px;
   }
 }
 
