@@ -229,7 +229,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  margin: 10px auto 5px auto;
 }
 
 .linkisi a {
@@ -265,6 +265,9 @@ p {
   font-size: 15px;
   border: 1px solid #8b8b8b;
   border-radius: 12px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .infonya {
@@ -574,6 +577,34 @@ iframe {
   opacity: 1;
 }
 
+.bobon img {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.bobon img:hover {
+  animation: loncat 0.6s ease infinite;
+}
+
+.aboutdl[data-target="bobon"] .ha img {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.aboutdl[data-target="bobon"] .ha img:hover {
+  animation: loncat 0.6s ease infinite;
+}
+
+.aboutdl[data-target="bobon"] .bawa {
+  height: auto;
+  min-height: unset;
+  padding: 30px 40px 40px;
+}
+
+.aboutdl[data-target="bobon"] .kitty img {
+  animation: wiggle 1.5s infinite ease-in-out;
+}
+
 section .wavet {
   position: absolute;
   top: 0;
@@ -678,7 +709,7 @@ section .wave.wave4 {
   }
 
   .contain h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 35px;
     text-align: center;
   }
@@ -767,6 +798,11 @@ section .wave.wave4 {
     aspect-ratio: 16 / 9;
   }
 
+  .fotoilus {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+  }
+
   .linkisi {
     display: flex;
     gap: 15px;
@@ -824,6 +860,7 @@ section .wave.wave4 {
   }
 
   .gip {
+    max-width: 230px;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
@@ -880,7 +917,7 @@ section .wave.wave4 {
   }
 
   .contain h1 {
-    font-size: 40px;
+    font-size: 55px;
   }
 
   .contain h3 {
@@ -969,5 +1006,36 @@ section .wave.wave4 {
   }
   100% {
     background-position-x: -1000px;
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes loncat {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
