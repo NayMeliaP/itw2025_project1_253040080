@@ -893,7 +893,7 @@ section .wave.wave4 {
 @media (max-width: 480px) {
   .conti,
   .contain {
-    width: 92%;
+    width: 80%;
   }
 
   .lain {
