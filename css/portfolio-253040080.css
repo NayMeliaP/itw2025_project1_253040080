@@ -693,7 +693,7 @@ section .wave.wave4 {
   .conti,
   .contain,
   .conti h2 {
-    top: -70px;
+    margin-top: -25px;
     width: 85%;
     background: none;
     border: none;
@@ -893,17 +893,33 @@ section .wave.wave4 {
 @media (max-width: 480px) {
   .conti,
   .contain {
-    width: 80%;
+    width: 100%;
+    border-radius: 16px;
   }
 
-  .bawa {
-    height: 500px;
+  .contain {
+    padding: 0;
+    height: auto;
+  }
+
+  .contain h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .contain h3 {
+    font-size: 18px;
+  }
+
+  .aboutdl[data-target="work"] .bawa {
+    padding-top: 30px;
+    max-width: 375px;
   }
 
   .lain {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 30px;
   }
 
   .lain img {
@@ -912,86 +928,95 @@ section .wave.wave4 {
   }
 
   .lain h5 {
-    font-size: 15px;
-  }
-
-  .linkisi,
-  .item {
-    width: 100%;
-  }
-
-  .contain h1 {
-    font-size: 55px;
-  }
-
-  .contain h3 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .pill {
-    font-size: 15px;
-    padding: 8px 10px;
-  }
-
-  .aku h3 {
-    font-size: 30px;
-  }
-  .ngisi {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .kiri,
-  .kanan {
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-  }
-
-  .giffo {
-    max-width: 150px;
-  }
-
-  .gip {
-    max-width: 210px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .form {
-    width: 100%;
-  }
-
-  .form input,
-  .form textarea {
-    width: 100%;
     font-size: 14px;
   }
 
-  .form textarea {
-    min-height: 120px;
+  .bawa {
+    height: auto;
+    max-height: calc(100vh - 80px);
+    padding: 20px;
   }
 
-  .form button {
-    width: 100%;
-    padding: 12px;
+  .aku img {
+    width: 120px;
+  }
+
+  .aku h3 {
+    font-size: 28px;
+  }
+
+  .pill {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .fotoilus {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+  .fotoilus img {
+    height: 160px;
+    border-radius: 8px;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .gameisi {
+    width: fit-content;
+    max-width: 95%;
+    text-align: justify;
+  }
+
+  .other h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .other p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .other ul {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .gameimg {
+    margin-left: 20px;
+  }
+
+  .linkisi a {
+    padding: 12px 14px;
+  }
+
+  .linkisi img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .linkisi h5 {
     font-size: 15px;
   }
 
   .contactisi h6 {
-    font-size: 32px;
-    margin-top: 0;
+    font-size: 28px;
   }
 
   .contactisi p {
     font-size: 14px;
-    margin-top: 5px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
   }
 }
 
