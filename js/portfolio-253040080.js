@@ -23,3 +23,14 @@ document.querySelectorAll(".close-btn").forEach((btn) => {
     document.querySelector(".dalemnya").classList.remove("active");
   });
 });
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzsNUxbd_bolmpy1OAdDlGlVmAosZD2dG5xiqbBJQTPX3Ww-WQrWpwehn4YSKFPJzuq/exec";
+const form = document.forms["mesageee"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+});

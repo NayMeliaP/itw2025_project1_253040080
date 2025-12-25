@@ -936,7 +936,7 @@ section .wave.wave4 {
   }
 
   .teksn {
-    margin-left: -5px;
+    margin-left: -3px;
   }
 
   .bawa {
@@ -986,6 +986,11 @@ section .wave.wave4 {
     width: fit-content;
     max-width: 95%;
     text-align: justify;
+    margin-left: -5px;
+  }
+
+  .gameimg {
+    margin-left: 20px;
   }
 
   .other h2 {
@@ -998,10 +1003,7 @@ section .wave.wave4 {
   .other ul {
     font-size: 14px;
     line-height: 1.5;
-  }
-
-  .gameimg {
-    margin-left: 20px;
+    margin-left: -5px;
   }
 
   .linkisi {
